@@ -1,10 +1,11 @@
 {
-  "displayName": "LaunchClicktale",
+  "displayName": "Clicktale",
   "name": "launchclicktale",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Deploy Clicktale Code.",
+  "iconPath": "resources/icons/cec_logo.svg",
   "author": {
-    "name": "Ryan & Uri"
+    "name": "Clicktale"
   },
   "viewBasePath": "src/view/",
   "configuration": {

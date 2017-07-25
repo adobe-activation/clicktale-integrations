@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Action</title>
+  </head>
+  <body>
+    Action Template
+
+    <script src="https://assets.adobedtm.com/activation/reactor/extensionbridge/extensionbridge.min.js"></script>
+    <script>
+      window.extensionBridge.register({
+        init: function(info) {
+          if (info.settings) {
+            // TODO Populate form values from persisted settings.
+			document.getElementById('partition').value = info.settings.partition || '';
+			document.getElementById('guid').value = info.settings.guid || '';
+          }
+        },
+
+        getSettings: function() {
+          // TODO Return settings object from form values.
+		  return{
+			partition: document.getElementById('partition').value || '';
+			guid: document.getElementById('guid').value || '';
+		  }
+        }, 
+
+        validate: function() {
+          // TODO Return whether settings are valid.
+		  return true;
+        }
+      });
+    </script>
+  </body>
+</html>

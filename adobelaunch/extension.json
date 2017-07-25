@@ -1,0 +1,49 @@
+{
+  "displayName": "LaunchClicktale",
+  "name": "launchclicktale",
+  "version": "1.0.0",
+  "description": "Deploy Clicktale Code.",
+  "author": {
+    "name": "Ryan & Uri"
+  },
+  "viewBasePath": "src/view/",
+  "configuration": {
+    "viewPath": "configuration/configuration.html",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+	  "decription" : "Guid and partition",
+      "type": "object",
+      "properties": {
+		"partition":{
+			"type" : "number",
+			"minLength" : 2
+		},
+		"guid":{
+			"type" : "string",
+			"minLength" : 36
+		},
+		"required":[
+			"partition",
+			"guid"
+		]		
+	  }
+    }
+  },
+  "actions": [
+    {
+      "displayName": "Send Clicktale Event",
+      "name": "deployclicktale",
+      "libPath": "src/lib/actions/deployclicktale.js",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+			"eventname": {
+				"type" : "string",
+				"minLength" : 1
+			}
+		}
+      }
+    }
+  ]
+}

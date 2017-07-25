@@ -1,0 +1,17 @@
+{
+  "name": "clicktale",
+  "version": "1.0.0",
+  "description": "Clicktale code for Adobe Launch",
+  "main": "index.js",
+  "scripts": {
+    "sandbox": "reactor-sandbox",
+    "scaffold": "reactor-scaffold"
+  },
+  "author": "Ryan & Uri",
+  "license": "ISC",
+  "devDependencies": {
+    "@adobe/reactor-sandbox": "^7.15.2",
+    "@adobe/reactor-scaffold": "^1.1.8",
+    "@adobe/reactor-turbine": "^19.1.0"
+  }
+}

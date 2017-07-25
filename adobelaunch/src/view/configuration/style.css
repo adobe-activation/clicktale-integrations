@@ -1,0 +1,89 @@
+body {
+	background-color: #f9f9f9;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+input,
+select,
+textarea,
+button {
+	font-family: 'Open Sans', sans-serif;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+	outline: none;
+}
+
+.header {
+	height: 80px;
+	background-color: #fff;
+	margin-bottom: 100px;
+}
+
+.header img {
+	position: relative;
+	top: 30px;
+	left: 80px;
+	width: 105px;
+	height: 21px;
+}
+
+.partition, .more {
+	text-align: center;
+}
+
+.partition label {
+	display: block;
+	font-size: 44px;
+	font-weight: 800;
+	color: #1e2675;
+	margin-bottom: 40px;
+}
+
+#partition {
+	width: 447px;
+	height: 39px;
+	border-radius: 3px;
+	padding: 0 7px;
+	background-color: #ffffff;
+	border: solid 2px #e0e0e0;
+	font-size: 14px;
+	color: #384165;
+}
+
+#partition_error,
+#guid_error {
+	display: block;
+	margin-top: 7px;
+	font-size: 14px;
+	color: #f33434;
+}
+
+.more {
+	font-size: 17px;
+	color: #384165;
+}
+
+.more label {
+	display: block;
+	font-weight: bold;
+	margin: 55px 0 20px 0;
+}
+
+.more input {
+	width: 227px;
+	height: 39px;
+	border-radius: 3px;
+	text-align: center;
+	background-color: #ffffff;
+	border: solid 2px #e0e0e0;
+	font-size: 20px;
+	color: #384165;
+}

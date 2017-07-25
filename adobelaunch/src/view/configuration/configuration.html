@@ -140,15 +140,16 @@
 			init: function(info) {
 			  if (info.settings) {
 				// TODO Populate form values from persisted settings.
-				document.getElementById('partition').value = (info.settings.partition) || '';
+        info.settings.partition ? document.querySelector('#partition [value="' + info.settings.partition + '"]').selected = true : '';
 				document.getElementById('guid').value = (info.settings.guid) || '';
 			  }
 			},
 
 			getSettings: function() {
 			  // TODO Return settings object from form values.
+        var select = document.getElementById('partition');
 				return {
-					partition: document.getElementById('partition').value || '',
+					partition: select.options[select.selectedIndex].value || '',
 					guid: document.getElementById('guid').value || ''
 				}
 			},
